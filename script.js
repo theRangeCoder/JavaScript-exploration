@@ -86,3 +86,12 @@ let example3 = 7.8759;
 let example4 = example3.toFixed(3);
 console.log(example4);
 
+// Challenge
+let ex1 = parseInt("Hello 33 World 22");
+let ex2 = parseFloat('44 Dylan 33');
+let ex3 = 55.3333.toFixed(0); // outputs the number as a string
+let ex4 = 200.0.toFixed(2);
+
+console.log(ex1); // Output = null
+// If our string starts with a number, then the parseInt(), parseFloat(), etc functions will extract the number from the string.
+
