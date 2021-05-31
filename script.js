@@ -44,6 +44,7 @@ var temp1; // Initialized as 'undefined'
 let temp2; // Initialized as 'undefined'
 const temp3=10; // 'const' should be assigned a value, at the time of declaration
 console.log(temp1+" "+temp2);
+console.log(typeof temp3);
 
 // Strings in JavaScript
  let str1 = "Munich";
@@ -61,7 +62,27 @@ console.log(firstName);
 let str2 = "The quick brown fox jumps over the lazy dog";
 arr1 = str2.split(' '); // splits the words of the strings at each empty space and stores them in an array
 console.log(arr1);
+console.log(typeof arr1);
 
 // The 'trim()' function - removes all spaces before and after a string
-str3 = str2.trim();
+let str3 = str2.trim();
 console.log(str3.length);
+
+// Challenge
+let fullName = firstName + " " + lastName;
+console.log(fullName);
+// In ES6, it would have been: let fullName = `${firstName} ${lastName}`
+
+// Numbers in JavaScript
+let example1 = 7.77; 
+// JS does not have multiple number types (float, int, double, etc). It just has 'number'.
+
+// To extract the integer part (convert it to an integer)
+let example2 = parseInt(example1);
+console.log(example2);
+
+// Rounding off, a value, to certain places of decimal
+let example3 = 7.8759;
+let example4 = example3.toFixed(3);
+console.log(example4);
+
