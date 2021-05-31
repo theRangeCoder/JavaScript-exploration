@@ -30,9 +30,19 @@ console.log(a+a);
  Create 2 variables related to your dog. Make one of them its age and update it by one.
  Log out all the values in a friendly way of your choosing.
 */
-let name;
-name = 'Monty';
+const name = 'Monty';
 let age = 5;
 age = age+1;
 console.log('Name: '+name);
 console.log('Age: '+age);
+
+// Declaring variables using const (Can neither be redeclared nor updated)
+const a2 = 5; 
+console.log(a);
+
+var temp1; // Initialized as 'undefined'
+let temp2; // Initialized as 'undefined'
+const temp3=10; // 'const' should be assigned a value, at the time of declaration
+console.log(temp1+" "+temp2);
+
+
