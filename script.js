@@ -127,3 +127,14 @@ arr2.forEach((element) => {
     
     Note: After creating the initial array do not just create a brand new array. Modify it accordingly.
 */
+let products = ['Toilet paper', 'Bottled water', 'Sanitizer'];
+console.log(products);
+
+products[0] = 'Paper towels';
+console.log(products);
+
+products.pop();
+console.log(products);
+
+products.push('Bleach');
+console.log(products);
