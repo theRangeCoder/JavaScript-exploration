@@ -92,6 +92,22 @@ let ex2 = parseFloat('44 Dylan 33');
 let ex3 = 55.3333.toFixed(0); // outputs the number as a string
 let ex4 = 200.0.toFixed(2);
 
-console.log(ex1); // Output = null
+console.log(ex1); // Output = NaN
 // If our string starts with a number, then the parseInt(), parseFloat(), etc functions will extract the number from the string.
 
+// Booleans in JavaScript
+let bool1 = true;
+console.log(Boolean(2+2==5));
+
+// Arrays (They start with index = 0)
+let arr2 = [5, 6, 7];
+console.log(arr2.length);
+console.log(arr2[0]); // Answer = 5
+
+// Adding values to the end of the array (the 'push()' function)
+arr2.push(8, 9, 10);
+console.log(arr2);
+
+// Removing the last value of an array (the 'pop()' function)
+arr2.pop();
+console.log(arr2);
