@@ -138,3 +138,25 @@ console.log(products);
 
 products.push('Bleach');
 console.log(products);
+
+// Objects in JavaScript (They can take in, properties) {key (property): value}
+console.log(typeof products); 
+let obj1 = {
+    firstName: 'Sam',
+    lastName: 'Jones',
+    address: {
+        city: 'Austin',
+        state: 'Texas'
+    },
+    age: 30,
+    cats: ['Milo', 'Batman']
+};
+
+// Updating the age
+obj1.age = 31;
+
+console.log(obj1);
+console.log(obj1.firstName);
+
+console.log(Object.values(obj1));
+console.log(obj1.hasOwnProperty('firstName'));
