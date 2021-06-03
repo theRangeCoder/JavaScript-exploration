@@ -243,5 +243,27 @@ let promo2 = {
 };
 console.log(promo1.valueOff > promo2.valueOff);
 
+// Increment and decrement
+let i1 = 5;
+i1+=5;
+console.log(i1);
+i1++;
+console.log(i1);
+i1--;
+console.log(i1);
+i1-=3;
+console.log(i1);
 
+// Challenge: Upsell Quantity
 
+/*
+ 1. Our business wants to upsell items in a user's cart. 
+ 2. Ask the user if they would like to add one more item (with the variable provided). Update the quantity variable if they do.
+ 3. Log the current quantity.
+*/
+let quantity = 10;
+let choice = true;
+if(choice==true) {
+    quantity++;
+}
+console.log("Updated quantity: "+quantity);
