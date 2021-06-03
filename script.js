@@ -214,3 +214,34 @@ let p_ad = p_bd - 5;
 console.log("Total price before discount: "+p_bd);
 console.log("Average price before discount: "+ap_bd);
 console.log("Final price after applying the promo code: "+p_ad);
+
+// Relational operators in JavaScript (Compare two items and return a true/ false value)
+let r1 = 10;
+let r2 = 15;
+
+console.log(r1 >= r2);
+console.log(r1 == r2);
+console.log(r1 != r2);
+
+// NOTE: JavaScript is a dynamically typed language, which means that we can always update a variable, initially containing one type of value, to another type of value. For example, we can update a variable, which initially contains a string, to a number.
+
+// Difference between '==' and '==='
+// ==: compares the values of two variables (for e.g.: 10=='10')
+// ===: compares the value and datatype of two variables (for e.g.: 10!='10')
+
+// Challenge: Best Promo Code
+
+/*
+ 1. Our business wants to make sure we give our users the best promo codes available for two categories.
+ 2. Create two promo codes in variables and compare to find out if the first one is a better value for the dollars off category. 
+*/
+let promo1 = {
+    valueOff: 20
+};
+let promo2 = {
+    valueOff: 10
+};
+console.log(promo1.valueOff > promo2.valueOff);
+
+
+
