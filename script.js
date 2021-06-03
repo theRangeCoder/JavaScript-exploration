@@ -183,3 +183,34 @@ console.log(user.address.city);
 console.log(user.hobbies[1]);
 console.log(user);
 //  To add another property: value pair, we could just type: user.property = value;
+
+// Arithmetic operators in JavaScript
+// Modulus
+console.log(7%2);
+
+// Challenge: Checkout Order Details
+
+/*
+ 1. Create 3 variables to store an item price. The last price 2 items were ordered (multiplication).
+ 2. Tell the user what the total price is before discount.
+ 3. Inform the user what the average price of items is before discount.
+ 4. Inform them the final price after saving 5 dollars with promo code 'I Got 5 On It'.
+*/
+
+// Declaring the price of the three items
+let p1 = 10;
+let p2 = 5;
+let p3 = 7;
+
+// Calculating the total price before discount
+let p_bd = p1+p2+(2*p3);
+
+// Calculating the average price before discount
+let ap_bd = p_bd/4;
+
+// Calculating the final price after applying the promo code
+let p_ad = p_bd - 5;
+
+console.log("Total price before discount: "+p_bd);
+console.log("Average price before discount: "+ap_bd);
+console.log("Final price after applying the promo code: "+p_ad);
