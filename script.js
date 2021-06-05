@@ -299,3 +299,35 @@ else if (age2<20) {
 else {
     console.log('adult');
 }
+
+// switch statements in JavaScript (It is important to 'break' after each case, else the statements of the following cases will also be executed, till a 'break' is encountered)
+
+// Challenge: Customer Upgrade
+
+/*
+ 1. Our business wants to convince users to upgrade their accounts.
+ 2. Check a user's account type (switch) of 'shopper', 'super shopper', & 'guest'.
+ 3. If a user is a 'guest' ask them if they want to upgrade to a 'shopper'.
+ 4. If a user is a 'shopper' ask if they want to upgrade to a 'super shopper'
+ 5. If a user is a 'super shopper' tell them they are the best!
+ 6. If we don't know user's status they are a guest.
+*/
+
+let accType = 'super shopper';
+switch(accType) {
+    case 'guest':
+        console.log("Would you like to upgrade to a shopper?");
+        break;
+    
+        case 'shopper':
+        console.log("Would you like to upgrade to a super shopper?");
+        break;
+    
+        case 'super shopper':
+        console.log("You are the best!");
+        break;
+    
+        default:
+        console.log("You are a guest!")
+}
+
