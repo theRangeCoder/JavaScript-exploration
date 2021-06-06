@@ -331,3 +331,57 @@ switch(accType) {
         console.log("You are a guest!")
 }
 
+// For loops
+// Sum of numbers from 0 to 5
+let sum=0;
+for (let i=0; i<=5; i++) {
+    console.log(i);
+    sum+=i;
+}
+console.log("Sum: "+sum);
+
+// Sum of values in an array
+let sum2 = 0;
+let arrLoop = [10,20,30,40,50];
+for (let i = 0; i<arrLoop.length; i++) {
+    sum2+=arrLoop[i];
+}
+console.log("Sum of elements of the array: "+sum2);
+
+// Challenge: Total Price
+
+/*
+ 1. Give our customer their total price. 
+ 2. Add the price of the items together with a sales tax of 8%.
+ 3. Log the price. 
+*/
+
+const cartItems = [
+    { quantity: 1, price: 5 },
+    { quantity: 3, price: 4 },
+    { quantity: 10, price: 1}
+]; // an array of objects
+
+let totalPrice = 0;
+
+// Calculating the total price
+for (let i=0; i<cartItems.length; i++) {
+    totalPrice+= cartItems[i].quantity*cartItems[i].price;
+}
+
+// Adding the sales tax of 8% to it
+totalPrice = 1.08*totalPrice;
+
+// Displaying the total price
+console.log("Total price: "+totalPrice);
+
+// Correcting it to two places of decimal
+console.log("Total price (corrected): "+parseFloat(totalPrice.toFixed(2)));
+
+// Another way of writing the for loop, by putting the items on the loop, instead of the index of the items (the 'of' keyword)
+let totalPrice2 = 0;
+for (let item of cartItems) {
+    totalPrice2+=item.quantity*item.price;
+}
+console.log(totalPrice2); // without the sales tax
+
