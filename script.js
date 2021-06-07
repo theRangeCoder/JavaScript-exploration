@@ -385,3 +385,56 @@ for (let item of cartItems) {
 }
 console.log(totalPrice2); // without the sales tax
 
+// while and do...while loops in JavaScript
+// usually used when the total number of iterations is not known
+let count=0;
+while (count<20) {
+    count++;
+}
+console.log(count);
+
+// Another way of writing the above code (using the 'break' statement)
+let count2=0;
+while (true) {
+    count2++;
+    if (count2>=20) {
+        break; // breaks out of the loop
+    }
+}
+console.log(count2);
+
+// do...while loop (it runs at least once)
+let count3=0;
+do {
+    count3++;
+    if (count3>=20) {
+        break;
+    }
+}
+while (false);
+console.log(count3);
+
+// Challenge: Analytics
+
+/*
+ 1. Track our user's activity.
+ 2. While the total updates is under 10 updates keep logging the update count.
+ 3. After we reach our threshold say, 'No longer tracking the user'.
+ 4. Change the logic to a do while with it updating just a single time. 
+*/
+let totalUpdates=0;
+while (totalUpdates<10) {
+    totalUpdates++;
+    console.log("Update count: "+totalUpdates);
+}
+console.log("No longer tracking the user");
+
+// Changing the above logic to do...while
+totalUpdates=0;
+do {
+    totalUpdates++;
+    console.log("Update count: "+totalUpdates);
+}
+while (false);
+console.log("No longer tracking the user");
+
