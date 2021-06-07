@@ -438,3 +438,23 @@ do {
 while (false);
 console.log("No longer tracking the user");
 
+// Functions in JavaScript (writing reusable code)
+function add() {
+    console.log('add');
+}
+
+// Invoking the function
+add();
+
+// Returning a value
+function add2() {
+    return 5;
+}
+
+console.log(add2());
+
+// Functions can take in, parameters as well
+function add3(num1,num2) {
+    return(num1+num2);
+}
+console.log(add3(5,6));
