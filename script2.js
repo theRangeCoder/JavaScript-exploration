@@ -31,3 +31,6 @@ let name2 = "Shuva";
 let greeting2 = "Welcome back";
 
 welcomeEl.innerText = greeting2 + ", " + name2;
+
+// Adding an emoji 👋 to the inner text
+welcomeEl.innerText+=" 👋";
