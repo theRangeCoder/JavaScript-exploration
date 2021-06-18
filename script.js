@@ -493,3 +493,21 @@ function getTaxedTotal(preTaxTotal) {
 console.log(getUserCredentials());
 console.log("Pre-tax total: "+getPreTaxTotal(cartItems));
 console.log("Price after tax: "+getTaxedTotal(getPreTaxTotal(cartItems)));
+
+// Practice time - part 1 (A couple of basic codes to brush up some of the earlier concepts)
+/* Problem 1: Create two variables, firstName2 and lastName2. Concatenate the two variables into a third variable called fullName2. Log fullName2 to the console.*/
+let firstName2 = "Shuva";
+let lastName2 = "Bhual";
+let fullName2 = firstName2 + " " + lastName2;
+console.log("Full name: "+fullName2);
+
+/* Problem 2: */
+let name2 = "Linda"
+let greeting = "Hi there"
+
+// Create a function that logs out "Hi there, Linda!" when called
+function getGreeting() {
+    console.log(greeting + ", " + name2 + "!")
+}
+
+getGreeting();
