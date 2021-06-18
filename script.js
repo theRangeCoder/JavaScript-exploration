@@ -536,4 +536,4 @@ for (i=1;i<=2;i++) {
     remove1Point();
 }
 
-console.log(myPoints)
+console.log(myPoints);
