@@ -501,7 +501,7 @@ let lastName2 = "Bhual";
 let fullName2 = firstName2 + " " + lastName2;
 console.log("Full name: "+fullName2);
 
-/* Problem 2: */
+// Problem 2:
 let name2 = "Linda"
 let greeting = "Hi there"
 
@@ -511,3 +511,29 @@ function getGreeting() {
 }
 
 getGreeting();
+
+// Problem 3
+
+let myPoints = 3
+
+// Create two functions, add3Points() and remove1Point(), and have them
+// add/remove points to/from the myPoints variable
+
+function add3Points() {
+    myPoints += 3;
+}
+
+function remove1Point() {
+    myPoints -= 1;
+}
+
+// Call the functions to that the line below logs out 10
+for (i=1;i<=3;i++) {
+    add3Points();
+}
+
+for (i=1;i<=2;i++) {
+    remove1Point();
+}
+
+console.log(myPoints)
