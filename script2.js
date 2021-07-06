@@ -103,6 +103,7 @@ for (let i = 0; i < largeCountries.length; i++) {
 // Practice time - part 2 (challenge 4) - push, pop, unshift, shift challenge
 
 largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"];
+console.log(largeCountries);
 
 // Fixup the largeCountries array so that China and Pakistan are added back into their respective places
 
