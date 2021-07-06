@@ -82,3 +82,33 @@ if (age < 6) {
 } else {
     console.log("senior citizen discount");
 }
+
+// Practice time - part 2 (challenge 3) - Largest countries by population
+let largeCountries = ["China","India","United States","Indonesia","Pakistan"];
+
+/* Use a for loop to log the following to the console:
+
+The 5 largest countries in the world:
+- China
+- India
+- United States
+- Indonesia
+- Pakistan
+*/
+console.log("The 5 largest countries in the world:")
+for (let i = 0; i < largeCountries.length; i++) {
+    console.log("- "+largeCountries[i]);
+}
+
+// Practice time - part 2 (challenge 4) - push, pop, unshift, shift challenge
+
+largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"];
+
+// Fixup the largeCountries array so that China and Pakistan are added back into their respective places
+
+largeCountries.pop();
+largeCountries.push("Pakistan");
+largeCountries.shift();
+largeCountries.unshift("China");
+
+
