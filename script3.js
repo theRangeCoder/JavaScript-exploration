@@ -28,3 +28,11 @@ const {name2, age2, projects: {diceGame}} = student;
 
 console.log(name2);
 console.log(diceGame);
+
+// Destructuring arrays
+const arr1 = ['BMW', 'Germany', 'Europe'];
+
+const [company, country, continent] = arr1;
+
+console.log(company);
+
