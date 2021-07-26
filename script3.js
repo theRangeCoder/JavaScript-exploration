@@ -36,3 +36,16 @@ const [company, country, continent] = arr1;
 
 console.log(company);
 
+// Object literals (key = value)
+function addressMaker(address) {
+    // Destructuring the object
+    const {city, state} = address;
+    const newAddress = {
+        city,
+        state,
+        country: 'United States'
+    };
+    console.log(`City: ${newAddress.city}; State: ${newAddress.state}; Country: ${newAddress.country}`);
+}
+
+addressMaker({city: 'Austin', state: 'Texas'});
