@@ -86,3 +86,10 @@ for (const obj of students) {
 const shoppingList = ["eggs", "milk", "butter"];
 let shoppingBasket = [...shoppingList, "bread", "sugar", "salt", "tomatoes"];
 console.log(`The new shopping list: ${shoppingBasket}`);
+
+// The rest operator (used when the number of parameters to a function are not known)
+function randomPrint(...text) {
+    console.log(text);
+}
+
+randomPrint(2,"Shuva",[2,3,4]);
