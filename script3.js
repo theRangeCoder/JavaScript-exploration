@@ -112,4 +112,12 @@ const add2 = function(n1, n2) {
     return n1+n2;
 }
 
+// Arrow functions
+const add3 = (n1, n2) => {
+    return n1+n2;
+}
 
+// Invoking the above 3 functions
+console.log(`The usual way: ${add(2, 3)}`);
+console.log(`The anonymous function: ${add2(2, 3)}`);
+console.log(`Using arrow functions: ${add3(2, 3)}`);
