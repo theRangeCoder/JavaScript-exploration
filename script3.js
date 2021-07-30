@@ -93,3 +93,23 @@ function randomPrint(...text) {
 }
 
 randomPrint(2,"Shuva",[2,3,4]);
+
+// Arrow functions (a new way to define functions)
+/*
+Let us explore the following 3 types of function declarations:
+1. The usual way
+2. The anonymous function
+3. Arrow functions
+*/
+
+// The usual way
+function add(n1, n2) {
+    return n1+n2;
+}
+
+// The anonymous function
+const add2 = function(n1, n2) {
+    return n1+n2;
+}
+
+
