@@ -121,3 +121,11 @@ const add3 = (n1, n2) => {
 console.log(`The usual way: ${add(2, 3)}`);
 console.log(`The anonymous function: ${add2(2, 3)}`);
 console.log(`Using arrow functions: ${add3(2, 3)}`);
+
+// An arrow function to check if a number is odd or even
+const oddOrEven = (n) => {
+    if (n % 2 === 0) {
+        return "Odd";
+    }
+    return "Even";
+}
