@@ -169,3 +169,19 @@ if (listIngredients.includes("chocolate")) {
 else {
     console.log("We can't make a chocolate cake because we are missing the ingredient chocolate");
 }
+
+/* import and export keywords
+
+**Challenge**
+
+Inside of the file data.js, create a function add4, that will receive 2 numbers and return the sum of them.
+Make sure to export this function.
+
+- Import the function add4, into the script3.js file
+- Create a variable result, that will hold the result of the function add when you call it and pass 2 numbers into it.
+- print into the console the value of the variable result;
+
+*/
+import {add4} from './data.js'
+let result = add4(2,3);
+console.log(result);
