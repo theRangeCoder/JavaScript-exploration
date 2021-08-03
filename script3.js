@@ -185,3 +185,19 @@ Make sure to export this function.
 import {add4} from './data.js'
 let result = add4(2,3);
 console.log(result);
+
+// str.padStart(n, char) and str.padEnd(n, char) methods
+/*
+Here, n = desired length of string
+char = the characters that should be added at the start/ end of the string, to make it reach that desired length
+For example, let str = 'Shuv'
+str.padStart(5, 'a') will give us the string: 'aShuv' because the length of the final string should be 5 and we should add 'a' at the beginning of it.
+Similarly, str.padEnd(5, 'a') will give us: 'Shuva'
+However, str.padStart(3, 'a') will give us: 'Shuv' because the string is already larger than length = 3, and hence the method will not add any character at the beginning of it to get it to length = 3.
+*/
+
+let padStr = 'JavaScript';
+console.log(padStr.padStart(13, 'a'));
+console.log(padStr.padStart(20, 'ach'));
+console.log(padStr.padEnd(5, 'a'));
+console.log(padStr.padEnd(12, 'yo'));
