@@ -201,3 +201,19 @@ console.log(padStr.padStart(13, 'a'));
 console.log(padStr.padStart(20, 'ach'));
 console.log(padStr.padEnd(5, 'a'));
 console.log(padStr.padEnd(12, 'yo'));
+
+// Classes
+import {Animal} from './data.js'
+Animal.message();
+
+// Creating an instance of the class
+let obj = new Animal('Cat');
+console.log(obj.legs);
+
+let obj2 = new Animal('Ant', 6);
+console.log(obj2.legs);
+
+obj.meow("woof");
+
+obj.metaData; // metaData is being treated as a property of the object
+
