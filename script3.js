@@ -182,7 +182,7 @@ Make sure to export this function.
 - print into the console the value of the variable result;
 
 */
-import {add4} from './data.js'
+import {add4, Player, TennisPlayer} from './data.js'
 let result = add4(2,3);
 console.log(result);
 
@@ -217,3 +217,9 @@ obj.meow("woof");
 
 obj.metaData; // metaData is being treated as a property of the object
 
+// From the class challenge
+let obj3 = new Player("John", "Germany");
+let obj4 = new TennisPlayer("Charles", "England", 35);
+obj3.printMessage();
+obj4.dispMessage();
+obj4.printMessage(); // the subclass inherits the constructor and methods of the superclass
