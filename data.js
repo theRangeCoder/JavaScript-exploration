@@ -4,6 +4,7 @@ export const add4 = (n1,n2) => {
 }
 
 export class Animal {
+    // Every class should have a constructor (that is the first function that runs when one creates an instance of a class)
     constructor(type, legs = 4) { // 4 legs by default
         // the 'this' keyword is used to refer to a particular instance of a class
         this.type = type;
@@ -50,7 +51,7 @@ export class Player {
 
 export class TennisPlayer extends Player {
     constructor(Name, Country, Age) {
-        // inheriting the constructor of the superclass
+        // inheriting/ initialising the constructor of the superclass 
         super(Name, Country);
         this.Age = Age;
     }
