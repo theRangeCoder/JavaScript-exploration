@@ -223,3 +223,10 @@ let obj4 = new TennisPlayer("Charles", "England", 35);
 obj3.printMessage();
 obj4.dispMessage();
 obj4.printMessage(); // the subclass inherits the constructor and methods of the superclass
+
+// Asynchronous JS
+// JS is a single-threaded programming language. Thus, it is bad at multi-tasking and can only read/ execute code, one line at a time.
+
+// setTimeout(function(), time (in milliseconds)): the function which is used here, is known as a callback function. This function is asynchronous, in case of the setTimeout() function, whereas in case of the arr.forEach() method, the callback function is synchronous.
+
+// The asynchronous functions get passed from the call stack to a web API, which keeps track of the time that the code should wait before passing it again onto the call stack for execution.
