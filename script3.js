@@ -245,3 +245,8 @@ const callback2 = () => {
 setTimeout(callback1, 5000); // since we have just used 'callback1' (without the brackets), the callback1() function is a callback function here
 setTimeout(callback2(), 6000); // here, we use 'callback2()' with the brackets, and hence it just calls the function. callback2() is not a callback here
 
+// Possible callbacks
+// setTimeout(callback1, ..) or setTimeout(() => {}, ..) or setTimeout(function() {}, ..) but not setTimeout(callback1(), ..)
+
+// Event listeners are also an example of asynchronous programming because the callback function only gets executed when an action is performed by the user.
+
