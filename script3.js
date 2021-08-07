@@ -225,8 +225,23 @@ obj4.dispMessage();
 obj4.printMessage(); // the subclass inherits the constructor and methods of the superclass
 
 // Asynchronous JS
-// JS is a single-threaded programming language. Thus, it is bad at multi-tasking and can only read/ execute code, one line at a time.
+// JS is a single-threaded/ single core programming language. Thus, it is bad at multi-tasking and can only read/ execute code, one line at a time. It is one of the best programming languages for asynchronous programming and does not support parallel programming.
 
 // setTimeout(function(), time (in milliseconds)): the function which is used here, is known as a callback function. This function is asynchronous, in case of the setTimeout() function, whereas in case of the arr.forEach() method, the callback function is synchronous.
 
 // The asynchronous functions get passed from the call stack to a web API, which keeps track of the time that the code should wait before passing it again onto the call stack for execution.
+
+// On a particular core, in case of asynchronous programming, one thread can be used by an asynchronous function/ process and then the thread can be transferred to the thread pool, in order to be used by other processes. This way multiple processes can be attended to, simultaneously, and one would not have to wait for one process to get completed before proceeding to the execution of the other processes.
+
+// 1. Callbacks/ callback functions = functions which are called inside other functions as arguments
+const callback1 = () => {
+    console.log('This is the first callback function');
+}
+
+const callback2 = () => {
+    console.log('This is the second callback function');
+}
+
+setTimeout(callback1, 5000); // since we have just used 'callback1' (without the brackets), the callback1() function is a callback function here
+setTimeout(callback2(), 6000); // here, we use 'callback2()' with the brackets, and hence it just calls the function. callback2() is not a callback here
+
