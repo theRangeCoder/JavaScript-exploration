@@ -277,3 +277,21 @@ userData
     .then((data) => console.log(data))
     .catch((error) => console.log(error));
 
+
+/* General syntax:
+
+let p = new Promise ((resolve, reject) => {
+    ...
+    resolve(define a string, object, etc)
+    else
+    reject(define a string, object, etc)
+})
+
+p.then((success) => {
+    action with success
+}).catch((error) => {
+    action with error
+});
+where 'success' and 'error' represent the object that was defined in the promise definition. If the promise gets resolved, then do something with the 'success' object, else do something with the 'error' object.
+
+*/
