@@ -295,3 +295,21 @@ p.then((success) => {
 where 'success' and 'error' represent the object that was defined in the promise definition. If the promise gets resolved, then do something with the 'success' object, else do something with the 'error' object.
 
 */
+
+// Sets (a datastructure) in ES6
+/*
+With sets, one cannot store duplicate values.
+*/
+
+// Creating an empty set
+const mySet = new Set(); // an object of the Set class. It has access to the methods of the Set class
+
+// Adding values to the set (add() method) - all types of values can be added to sets
+mySet.add(24);
+mySet.add(35); // adding a number
+mySet.add(true); // adding a boolean
+mySet.add({name: "John", age: 23}); // adding an object
+
+// How many elements are there in the set? - size() method
+console.log(`Number of unique elements in the set: ${mySet.size()}`);
+
