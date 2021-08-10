@@ -310,6 +310,21 @@ mySet.add(35); // adding a number
 mySet.add(true); // adding a boolean
 mySet.add({name: "John", age: 23}); // adding an object
 
-// How many elements are there in the set? - size() method
-console.log(`Number of unique elements in the set: ${mySet.size()}`);
+// How many elements are there in the set? - size method
+console.log(`Number of unique elements in the set: ${mySet.size}`);
 
+// Displaying the set
+console.log(mySet);
+
+// has(value) method - returns if a set contains the element = 'value'
+console.log(mySet.has(24));
+console.log(mySet.has(37));
+
+// delete(item) method - to delete an item from the list
+console.log(mySet.delete(35));
+console.log(mySet);
+
+// Looping through the set
+for (let item of mySet) {
+    console.log(item);
+}
