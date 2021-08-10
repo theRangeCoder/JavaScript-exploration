@@ -328,3 +328,11 @@ console.log(mySet);
 for (let item of mySet) {
     console.log(item);
 }
+
+// Converting a set to an array (Using the static method from() of the Array class)
+const myArray = Array.from(mySet);
+console.log(myArray);
+
+// Emptying a set (Removing all values from a set)
+mySet.clear();
+console.log(mySet);
