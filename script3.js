@@ -336,3 +336,10 @@ console.log(myArray);
 // Emptying a set (Removing all values from a set)
 mySet.clear();
 console.log(mySet);
+
+// Debugging
+/* 
+For debugging, one could try out the following two things:
+1. console.log() the lines which, according to you, could be causing the error
+2. Use the command "debugger;" such that the debugger starts running at the execution time of the code
+*/
